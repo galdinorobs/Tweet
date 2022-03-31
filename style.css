@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
+  font-size: 15px;
 
   font-family: "Roboto", sans-serif;
 }
@@ -27,6 +27,34 @@ body {
   height: 161px;
   display: flex;
   border: 1px solid var(--border);
+  padding: 17px 84px 17px 17px;
+}
+
+.image {
+  margin-right: 12px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.header h1 {
+  margin-right: 3px;
+  font-weight: 700;
+}
+
+.header h2 {
+  margin-right: 3px;
+  color: var(--icons-text);
+  font-weight: 400;
+}
+
+.verify {
+  height: 15px;
+  width: 15px;
+  margin-right: 6px;
 }
 
 .dot {
@@ -35,4 +63,23 @@ body {
   background: var(--icons-text);
   display: inline-block;
   border-radius: 50%;
+  margin-right: 3px;
+}
+
+.date {
+  color: var(--icons-text);
+}
+
+.main p {
+  color: var(--text);
+}
+
+.margin {
+  margin-bottom: 15px;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
