@@ -8,7 +8,6 @@
 }
 
 :root {
-  --background: red;
   --text: #0f1419;
   --border: #dadddf;
   --icons-text: #536471;
@@ -23,11 +22,13 @@ body {
 }
 
 .container-tweet {
-  width: 591px;
+  width: 100%;
+  max-width: 591px;
   height: 161px;
   display: flex;
   border: 1px solid var(--border);
   padding: 17px 84px 17px 17px;
+  box-sizing: border-box;
 }
 
 .image {
@@ -70,16 +71,44 @@ body {
   color: var(--icons-text);
 }
 
+.main {
+  margin-bottom: 16px;
+}
 .main p {
   color: var(--text);
 }
 
 .margin {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 
 .footer {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.box img {
+  margin-right: 18px;
+  transition-duration: 300ms;
+  cursor: pointer;
+}
+
+.box img:hover {
+  transform: scale(1.3);
+  filter: blur(0.5px);
+}
+
+.box small:hover {
+  color: var(--icons-text);
+}
+
+@media (max-width: 1024px) {
+  .container-tweet {
+    padding: 10px;
+    margin: 0 10px;
+  }
+  .box img {
+    margin-right: 5px;
+  }
 }
